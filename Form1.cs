@@ -16,5 +16,17 @@ namespace WiAr_Studienleistung_4
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Color[] colors = { Color.White, Color.Gray, Color.Red, Color.Blue, Color.Green, Color.Purple, Color.Yellow,Color.DeepSkyBlue};
+
+            Random rnd = new Random();
+            int r = rnd.Next(colors.Length);
+
+            Color randomColor = (colors[r]);
+
+            button1.BackColor= randomColor;
+        }
     }
 }
